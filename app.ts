@@ -1,19 +1,20 @@
+type RouteFunction = () => Record<string, any>;
+
 export class Server {
-  get() {
-
+  private routes = new Map<string, RouteFunction>();
+  get(path: string, action: RouteFunction) {
+    this.routes.set(path, action);
   }
-  post() {
-    
+  post(path: string, action: RouteFunction) {
+    this.routes.set(path, action);
   }
-  delete() {
-
+  delete(path: string, action: RouteFunction) {
+    this.routes.set(path, action);
   }
-  put() {
-
+  put(path: string, action: RouteFunction) {
+    this.routes.set(path, action);
   }
 }
 
-const server = new Server();
 
-server.get();
-server.post();
+
