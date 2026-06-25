@@ -14,9 +14,16 @@ export class Server {
   put(path: string, action: RouteFunction) {
     this.routes.set(path, action);
   }
+  patch(path: string, action: RouteFunction) {
+    this.routes.set(path, action);
+  }
+  sendStaticFile(path: string, filePath: string) {
+    //
+  }
 }
 
 const server = new Server();
 
 server.get("/products", () => ({ message: "GET request" }));
 server.post("/products", () => ({ message: "POST request" }));
+server.patch("/products", () => ({ message: "PATCH request" }));
