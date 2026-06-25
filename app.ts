@@ -23,3 +23,4 @@ const server = new Server();
 
 server.get("/products", () => ({ message: "GET request" }));
 server.post("/products", () => ({ message: "POST request" }));
+server.patch("/products", () => ({ message: "PATCH request" }));
