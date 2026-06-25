@@ -16,5 +16,7 @@ export class Server {
   }
 }
 
+const server = new Server();
 
-
+server.get("/path", () => ({ message: "GET request" }));
+server.post("/path", () => ({ message: "POST request" }));
