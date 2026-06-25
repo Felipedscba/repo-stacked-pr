@@ -1,14 +1,19 @@
 export class Server {
-    get() {
+  get() {
 
-    }
-    post() {
+  }
+  post() {
+    
+  }
+  delete() {
 
-    }
-    delete() {
+  }
+  put() {
 
-    }
-    put() {
-
-    }
+  }
 }
+
+const server = new Server();
+
+server.get();
+server.post();
