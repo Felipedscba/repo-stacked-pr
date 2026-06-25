@@ -17,6 +17,9 @@ export class Server {
   patch(path: string, action: RouteFunction) {
     this.routes.set(path, action);
   }
+  sendStaticFile(path: string, filePath: string) {
+    //
+  }
 }
 
 const server = new Server();
