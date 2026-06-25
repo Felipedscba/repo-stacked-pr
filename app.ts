@@ -14,4 +14,7 @@ export class Server {
   put(path: string, action: RouteFunction) {
     this.routes.set(path, action);
   }
+  patch(path: string, action: RouteFunction) {
+    this.routes.set(path, action);
+  }
 }
